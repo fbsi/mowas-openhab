@@ -51,7 +51,6 @@ function f2() {
         logger.error("JSON Fehler. Fehler bei dem angeforderten JSON von warnung.bund.de");
         return "Fehler";
     }
-    //var output = "";
     for (var i = 0; i < newJson.length; i++) {
         var typ = newJson[i]["msgType"];
         var hdln = newJson[i]["info"][0]["headline"]
